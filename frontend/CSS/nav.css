@@ -1,0 +1,83 @@
+/* nav */
+.leftMenu
+{
+	width: 100%;
+	background-color: rgba(2,10,27,0.2);
+	box-shadow: 0px -1px 7px 0px white;
+	border-radius: 1rem;
+	opacity: 1;
+}
+.leftMenu a
+{
+	width: 100%;
+	font-size: 30px;
+	text-decoration: none;
+	display: block;
+	line-height: 46px;
+	max-height: 46px;
+	color: white;
+	transition: all .3s;
+}
+.leftMenu span
+{
+	margin: 10px;
+	padding-left: 10px;
+	width: 100%;
+}
+
+.leftMenu-item
+{
+	position: relative;
+	width: 100%;
+}
+
+
+.leftMenu-item.leftMenu-show
+{
+	border-bottom: none;
+}
+
+.leftMenu-item ul
+{
+	display: none;
+	background: rgba(0,0,0,.1);
+}
+
+.leftMenu-item ul a
+{
+	padding-left: 40px;
+	font-size: 25px;
+}
+
+
+.leftMenu-item.leftMenu-show ul{display: block;}
+
+.leftMenu-item>a:before
+{
+	width: 100%;
+	content: "";
+	position: absolute;
+	left: 0px;
+	width: 2px;
+	height: 46px;
+	background: #34A0CE;
+	opacity:0;
+	transition: all .3s;
+}
+
+
+
+/*---------------------*/
+.leftMenu-more{float:left;margin-left: 10px;font-size: 30px;transition: transform .3s;}
+/* 此处为导航右侧箭头 如果自定义iconfont 也需要替换*/
+.leftMenu-more::after{content: "\2023"; }
+/*---------------------*/
+.leftMenu-show .leftMenu-more{transform:rotate(90deg);}
+.leftMenu-show,.leftMenu-item>a:hover{color: #FFF;background:rgba(0,0,0,.1);}
+.leftMenu-show>a:before,.leftMenu-item>a:hover:before{opacity:1;}
+.leftMenu-item li:hover a{color: #FFF;background: rgba(0, 0, 0,.1);}
+
+
+
+
+
