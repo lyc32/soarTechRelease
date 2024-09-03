@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark justify-content-center header">
     <a  onclick="goHome()">
-      <img class="logo ms-5" src = './static/logo.ico'>
+      <img class="logo ms-5" src = './static/logo.png'>
     </a>
     <a class="navbar-brand textLogo text-white" onclick="goHome()">
       <?php echo($companyName)?>
