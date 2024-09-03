@@ -1,6 +1,6 @@
 <?php
 	// header 
-	$companyName = 'MyCompany';
+	$companyName = 'SoarTech';
 	
 	// footer
 	$author = 'CodeNext';
