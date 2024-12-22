@@ -1,0 +1,236 @@
+.header
+{
+    background-color: rgba(2,10,27,0.2);
+    box-shadow: 0px -1px 7px 0px white
+}
+
+.togglerButton
+{
+    border-color:white;
+}
+
+.logo
+{
+    width:5rem;
+    height: 5rem;
+    float:left;
+}
+
+.logoCard
+{
+    width:100%;
+    height: 5rem;
+    text-align: center;
+}
+
+.logoImg
+{
+    width:5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 4px 0px white;
+}
+
+.logoImg:hover
+{
+    box-shadow: 0px 0px 4px 2px white
+}
+
+.font
+{
+    font-family: "Josefin Slab", serif;
+}
+
+.menu
+{
+    font-size: 25px;
+}
+
+.textLogo
+{
+    font-size: 40px;
+}
+
+.title
+{
+    font-size: 50px;
+}
+
+.article
+{
+    font-size: 30px;
+}
+
+.productContainer
+{
+    width : 100%;
+    height: 20rem;
+    display: flex;
+}
+
+.productCard
+{
+    width : 15rem;
+    height: 20rem;
+    border-radius: 5rem;
+    box-shadow: 0px 0px 4px 0px white
+}
+
+.productImage
+{
+    width: 15rem;
+    height:20rem;
+    border-radius: 5rem;
+}
+
+.productTitle
+{
+    display:block;
+    position:absolute;
+    z-index:10;
+    bottom:0;
+    left:0;
+    color:#FFF;
+    width:100%;
+    height:100%;
+    padding-top: 15%;
+    font-size: 48px;
+}
+
+.productCard:hover
+{
+   box-shadow: 0px 0px 4px 2px white
+}
+
+
+.chatButton
+{
+    position: fixed; 
+    bottom:150px;
+    right:20px;
+}
+
+
+.loginCard
+{
+    background-color: rgba(2,10,27,0.2);
+    box-shadow: 0px -1px 7px 0px white;
+    opacity: 0.5;
+}
+
+.loginLogo
+{
+    width: 10rem;
+    height:10rem;
+}
+
+.inputFont
+{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+
+.modal_open{
+    background: rgba(0, 0, 0, 0.6);
+    display:block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.modal_close
+{
+    display:none;
+}
+
+.modal_card
+{
+    background-color: rgba(2,10,27,0.2);
+    box-shadow: 0px -1px 7px 0px white;
+    margin-top: 45%;
+    opacity: 1;
+    min-height: 6rem;
+    animation: showPop 0.5s;
+    -webkit-animation: showPop 0.5s;
+}
+
+.modal_close_button_show
+{
+    position: absolute;
+    top:0.5rem;
+    right: 1rem;
+    text-align: center;
+    background: transparent;
+}
+
+.modal_close_button
+{
+    display: none;
+}
+
+@keyframes showPop
+{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes showPop /*Safari and Chrome*/
+{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+
+
+
+.horizontalLine
+{
+    width:100%;
+    height:2px;
+    border:1px;
+    background:white;
+    animation: drawHorizontalLine 2s;
+    -webkit-animation: drawHorizontalLine 2s;
+}
+
+@keyframes drawHorizontalLine
+{
+    from {width:0px;}
+    to {width:100%;}
+}
+
+@-webkit-keyframes drawHorizontalLine /*Safari and Chrome*/
+{
+    from {width:0px;}
+    to {width:100%;}
+}
+
+.footer 
+{
+    position: fixed; 
+    right: 20px;
+    bottom: 10px;
+    font-family: "Josefin Slab", serif;
+    line-height: 27px;
+    font-size: 18px;
+    -webkit-animation: footer-frames 3s forwards;
+            animation: footer-frames 3s forwards;
+    opacity: 0;
+}
+@-webkit-keyframes footer-frames {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes footer-frames {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
